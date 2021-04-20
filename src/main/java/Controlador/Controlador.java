@@ -37,15 +37,23 @@ public class Controlador implements ActionListener{
             modelo.vacios(vista.tipoCarro.getText()+"tipoCarro");
             
             modelo.setTipoServicio(vista.tipoServicio.getText());
-            modelo.setTipoCarro(vista.tipoCarro.getText());            
+            modelo.setTipoCarro(vista.tipoCarro.getText());
             
-            modelo.escojerTipoDeServicio();
-                       
+            modelo.escojerTipoDeServicio();     
+            
+            JOptionPane.showMessageDialog(null, "Registrado con exito");
+                                                           
         }
 
         if(vista.botonConsultar == e.getSource()){
 
-            JOptionPane.showMessageDialog(null, "El boton de consultar funciona");
+            vista.produccionServicio.setText(modelo.getValorTotal()+"");
+            vista.produccionFuncionario.setText(modelo.getValorTotal()+"");
+            vista.produccionRangosFecha.setText(modelo.getValorTotal()+"");            
+
+            modelo.setValorTotal(0.0);
+            
+            JOptionPane.showMessageDialog(null, "Consultado con exito");            
             
         }
 

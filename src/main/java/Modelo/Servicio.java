@@ -33,7 +33,15 @@ public class Servicio implements IValidarInterface{
     public void setTipoServicio(String tipoServicio) {
         this.tipoServicio = tipoServicio;
     }       
-        
+
+    public void setValorTotal(double valorTotal) {
+        this.valorTotal = valorTotal;
+    }          
+    
+    public double getValorTotal() {
+        return valorTotal;
+    }          
+    
     public double lavadoBasico(){
             
         double agregarValor = lavadoExterior+lavadoInterior+aspirada;

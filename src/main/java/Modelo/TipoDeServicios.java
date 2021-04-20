@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 
 public class TipoDeServicios extends Servicio{
  
-    public void escojerTipoDeServicio(){
+    public double escojerTipoDeServicio(){
        
         if(tipoServicio.equals("")){
             
@@ -40,6 +40,8 @@ public class TipoDeServicios extends Servicio{
             }
             
         }
+        
+        return getValorTotal();
         
     }
     

@@ -38,7 +38,11 @@ public class Vista extends JFrame{
         oprimirAltR = new JLabel("<html> De click sobre el boton <br> o puede oprimir alt + a </html>");
         oprimirAltC = new JLabel("<html> De click sobre el boton <br> o puede oprimir alt + C </html>");
         tipoServicio = new JTextField();
-        tipoCarro = new JTextField();        
+        tipoCarro = new JTextField();   
+        produccionServicio = new JTextField();
+        produccionFuncionario = new JTextField();
+        produccionRangosFecha = new JTextField();
+       
         botonRegistrar = new JButton("Registrar Servicios");
         botonConsultar = new JButton("Consultar Servicios");        
                 
@@ -55,6 +59,9 @@ public class Vista extends JFrame{
         tituloPproduccionRangosFecha.setBounds(500, 200, 150, 25);
         tipoServicio.setBounds(130, 125, 120, 25);
         tipoCarro.setBounds(130, 175, 120, 25);
+        produccionServicio.setBounds(500, 125, 120, 25);
+        produccionFuncionario.setBounds(500, 175, 120, 25);
+        produccionRangosFecha.setBounds(500, 225, 120, 25);        
         oprimirAltR.setBounds(130, 445, 200, 30);
         oprimirAltC.setBounds(520, 445, 200, 30);
         botonRegistrar.setBounds(110, 400, 170, 30);
@@ -92,6 +99,9 @@ public class Vista extends JFrame{
         
         panelPrincipal.add(tipoServicio);
         panelPrincipal.add(tipoCarro);
+        panelPrincipal.add(produccionServicio);
+        panelPrincipal.add(produccionFuncionario);
+        panelPrincipal.add(produccionRangosFecha);        
         
         panelPrincipal.add(oprimirAltR);
         panelPrincipal.add(oprimirAltC);
